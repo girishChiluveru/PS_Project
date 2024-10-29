@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game with Video Capture</title>
+    <link rel="stylesheet" href="./css/quiz.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="timer">
+            <div id="timer">15</div>
+        </div>
+        <h1>Quiz Game</h1>
+        <div class="question-container">
+            <div id="question" class="question"></div>
+            <div class="answer-buttons"></div>
+        </div>
+        <div id="quote" class="quote"></div>
+        <div id="result"></div>
+    </div>
+
+    <div class="video-container">
+        <video id="video" autoplay playsinline style="display: none;"></video>
+        <canvas id="canvas" width="640" height="480" style="display:none;"></canvas>
+    </div>
+
+    <div class="sparkle-container"></div>
+
+    <script src="./js/quiz.js"></script>
+</body>
+</html>

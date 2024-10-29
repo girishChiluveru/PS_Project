@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expression Tracking</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./css/report.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Expression Tracking for Dyslexic Children</h1>
+
+        <!-- Buttons to select the question -->
+        <div class="question-buttons">
+            <button class="question-button" data-question="0">Question 1</button>
+            <button class="question-button" data-question="1">Question 2</button>
+            <button class="question-button" data-question="2">Question 3</button>
+            <button class="question-button" data-question="3">Question 4</button>
+            <button class="question-button" data-question="4">Question 5</button>
+        </div>
+
+        <!-- Display average emoji for selected question -->
+        <div class="average-expression">
+            <h2>Average Expression for Selected Question:</h2>
+            <div id="averageEmoji" class="emoji">😊</div>
+        </div>
+
+        <!-- Wrapper for the chart -->
+        <div id="expressionChartWrapper">
+            <canvas id="expressionChart"></canvas>
+        </div>
+
+        <!-- Back button -->
+        <button class="back-button" id="backButton">Overall</button>
+
+        <!-- Display average emoji of all questions -->
+        <div class="average-expression" id="overallAverageEmojiWrapper" style="display: none;">
+            <h2>Overall Average Expression:</h2>
+            <div id="overallAverageEmoji" class="emoji"></div>
+        </div>
+    </div>
+
+    <script src="./js/report.js">
+    </script>
+</body>
+
+</html>

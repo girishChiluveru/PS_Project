@@ -1,0 +1,16 @@
+{
+  "name": "project_ps",
+  "version": "1.0.0",
+  "description": "\"To enhance the challenges by Dyslexic children ,analyzing the images of the child during game play\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Girish.C",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "mongoose": "^8.7.3",
+    "uuid": "^11.0.2"
+  }
+}

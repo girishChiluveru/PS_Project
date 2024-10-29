@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title project with facicon</title>
+    <link rel="stylesheet" href="./css/homepage.css">
+</head>
+
+<body>
+    <h1>Welcome to the Dyslexia Awareness Program</h1>
+    <div class="container">
+        <form action="/login" method="POST">
+            <label for="childName">Enter child name:</label>
+            <input type="text" id="childName" name="childName" required>
+            <button type="submit">Submit</button>
+        </form>
+     <!-- <button id="childrenBtn">Children's Quiz</button> -->
+        <button id="adminBtn">Admin Login</button>
+        
+        <div id="adminLogin">
+            <h2>Admin Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="loginBtn">Login</button>
+            <div id="adminMessage"></div>
+        </div>
+        
+        <div id="reports" style="display: none;">
+            <h2>Child Reports</h2>
+            <button id="viewReportsBtn">View Reports</button>
+        </div>
+    </div>
+    <script src="./js/homepage.js"></script>
+</body>
+
+</html>
